@@ -1,0 +1,839 @@
+// sass-lint:disable indentation, property-sort-order, quotes, class-name-format
+
+@import 'colors';
+@import 'fonts';
+@import 'mixini';
+
+// about.html
+
+.header--about {
+    min-height: 450px;
+    background-image: url('../images/about/hero.png');
+    background-position: top;
+}
+
+.header--about-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.header--about-title {
+    margin-top: auto;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    letter-spacing: 15px;
+    color: $white;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    background-color: $bk-color;
+}
+
+.main-wrapper {
+    flex-basis: 100%;
+    display: flex;
+    padding-top: 15px;
+    max-width: 1200px;
+}
+
+.main-nav__show {
+    padding: 45px 20px;
+    color: $btn-color;
+}
+
+.main-nav__show-span {
+    color: $font-color;
+}
+
+.main-left {
+    padding: 20px;
+    flex-basis: 30%;
+}
+
+.main-right {
+    padding: 0 20px;
+    flex-basis: 70%;
+    color: $font-color;
+}
+
+.main-left__accordion-item {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1;
+    background-color: $white;
+}
+
+.tile-small__upper-text--accordion {
+    margin: 0;
+    padding: 12px;
+    color: $font-color;
+}
+
+.accordion-item__title {
+    position: relative;
+    padding: 12px;
+    border-bottom: 1px solid $btn-color;
+    color: $btn-color;
+}
+
+.accordion-item__title-cross--flat {
+    position: absolute;
+    padding: 12px;
+    top: 9px;
+    right: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.accordion-item__title-cross--up {
+    position: absolute;
+    padding: 12px;
+    top: 0;
+    right: 9px;
+}
+
+.accordion-textbody {
+    padding: 12px;
+    color: $font-color;
+    line-height: 1.5;
+}
+
+.main-right__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-right__item-title {
+    padding: 16px 0;
+    color: $black;
+}
+
+.main-right__item-title--one {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.main-right__item-title--two {
+    font-size: 28px;
+}
+
+.main-right__item-title--three,
+.main-right__item-title--four {
+    font-size: 24px;
+}
+
+.main-right__item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.main-right__item-text--large {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.main-right__item-text--caption {
+    min-width: 100%;
+    text-align: center;
+    border-bottom: 1px solid $font-color;
+    font-style: italic;
+}
+
+.contact--conntact {
+    padding-top: 6em;
+}
+
+// work.html
+
+.header--work {
+    min-height: 450px;
+    background-image: url('../images/work/work-head.png');
+    background-position: top;
+}
+
+.header--work-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.header--work-title {
+    margin-top: auto;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    letter-spacing: 15px;
+    color: $white;
+}
+
+.main-work {
+    padding: 2em 8em;
+    background-color: $bk-color;
+}
+
+.main-nav__show--work {
+    padding: 45px;
+}
+
+.main-work__wrapper {
+    max-width: 1160px;
+    margin: 25px auto;
+}
+
+.main-row--one {
+    display: flex;
+    justify-content: center;
+}
+
+.main-row__item {
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    min-height: 580px;
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(40%);
+    }
+
+    &::after {
+        position: absolute;
+        content: " ";
+        bottom: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 50%;
+        z-index: 0;
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(2, 2, 2, 0));
+      }
+}
+
+.main-row__item--left {
+    background-image: url('../images/sporty-bike.png');
+}
+
+.main-row__item--right {
+    background-image: url('../images/about/hero.png');
+}
+
+.main-row__paragh {
+    margin-top: auto;
+    padding: 1em;
+    font-size: 3em;
+    color: $white;
+    z-index: 10;
+}
+
+.main-row--two {
+    text-align: center;
+}
+
+.main-row--three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 120px 0 0;
+}
+
+.main-row__slider {
+    padding: 3em 0 0;
+}
+
+.main-row__col {
+    background-position: center;
+    background-size: cover;
+    min-height: 460px;
+    flex-basis: 33.3%;
+}
+
+.main-row__col--one {
+    background-image: url('../images/red-bike-frame.png');
+}
+
+.main-row__col--two {
+    background-image: url('../images/bike-on-wall.png');
+}
+
+.main-row__col--three {
+    background-image: url('../images/about/bike-at-river.png');
+    background-position: right;
+}
+
+// contact.html
+
+.header--contact {
+    min-height: 450px;
+    background-image: url('../images/contact/04a-desktop-contact-dropdown.png');
+    background-position: top;
+}
+
+.header--contact-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.header--contact-title {
+    margin-top: auto;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    letter-spacing: 15px;
+    color: $white;
+}
+
+.main-left__contact {
+    background-color: $white;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.main-left__contact-title {
+    font-size: 24px;
+    padding: 5px 0;
+}
+
+.main-left__contact-text {
+    color: $font-color;
+    padding: 10px 0;
+    line-height: 2;
+}
+
+.main-left__contact-link {
+    color: $btn-color;
+    text-decoration: none;
+}
+
+.main-right__form {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.form-label {
+    flex-basis: 100%;
+    padding: 25px 0 5px;
+}
+
+.contact-input--contact {
+    padding: 15px;
+    min-width: 350px;
+    color: $light-font;
+    font-size: 20px;
+    font-style: italic;
+
+    &::placeholder {
+        color: $light-font;
+        font-size: 20px;
+        font-style: italic;
+    }
+}
+
+.contact-input--select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 380px;
+    background-image: url('../images/contact/select-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+.contact-input--textarea {
+    flex-basis: 100%;
+    min-height: 260px;
+    resize: none;
+}
+
+.form-checkbox__container {
+    flex-basis: 100%;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 24px 0;
+    cursor: pointer;
+    // -webkit-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none;
+    user-select: none;
+}
+
+//checbox
+.form-checkbox__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+// Create a custom checkbox 
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid $light-font;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+.form-checkbox__container:hover input ~ .checkmark {
+  background-color: $light-font;
+}
+
+// When the checkbox is checked, add a background
+.form-checkbox__container input:checked ~ .checkmark {
+  background: url('../images/contact/checkbox-nike.png') no-repeat;
+
+  &::after {
+    display: block;
+  }
+}
+
+.contact-btn--form {
+    margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .header {
+        min-height: 450px;
+    }
+
+    .wrapper {
+        padding: 4rem 0;
+    }
+
+    .header--about-title,
+    .header--contact-title,
+    .header--work-title {
+        font-size: 40px;
+        letter-spacing: 8px;
+        padding-bottom: 60px;
+    }
+
+    .main-wrapper {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+
+    .main-nav__show {
+        padding: 44px 20px 12px;
+    }
+
+    // about us
+
+    .main {
+        padding-bottom: 10px;
+    }
+
+    .main-right__item-title {
+        padding-top: 10px;
+    }
+
+    .main-right__item-title--one {
+        padding-top: 18px;
+        font-size: 26px;
+    }
+
+    .main-right__item-title--two {
+        font-size: 24px;
+        padding: 35px 0 0;
+    }
+
+    .main-right__item-title--three,
+    .main-right__item-title--four {
+        font-size: 20px;
+    }
+
+    .main-left {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        order: 2;
+        flex-basis: 100%;
+    }
+
+    .main-left__accordion-container {
+        flex-basis: 50%;
+    }
+
+    .main-left__accordion-item {
+        margin: 0 15px;
+    }
+
+    .tile-small__lower {
+        padding-bottom: 4em;
+        margin: 15px;
+    }
+
+    .small-title {
+        padding: 21px 0 0;
+    }
+
+    .main-right {
+        flex-basis: 100%;
+    }
+
+    .main-right__item-text--large {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .main-right__item-text {
+        margin: 12px 0;
+    }
+
+    .main-right__item-image {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        padding: 0 15px;
+    }
+
+    //work 
+
+    .main-work {
+        padding: 0 20px;
+    }
+
+    .main-nav__show--work {
+        padding: 45px 0;
+    }
+
+    .main-work__wrapper {
+        margin: 0;
+        padding-bottom: 41px;
+    }
+
+    .main-row__paragh {
+        font-size: 24px;
+    }
+
+    .main-row__item {
+        min-height: 365px;
+    }
+
+    .main-row__col {
+        min-height: 290px;
+    }
+
+    .main-row--two {
+        padding-top: 43px;
+    }
+
+    .intro-text {
+        padding: 10px 6px;
+        line-height: 1.9;
+    }
+
+    //contact
+
+    .main-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .main-left {
+        padding: 45px 22px;
+        order: 2;
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    .main-left__contact {
+        flex-basis: 40%;
+        margin: 0 10px;
+    }
+
+    .main-left__contact-text {
+        line-height: 1;
+    }
+
+    .main-right__item-text {
+        padding: 5px 0 22px;
+    }
+
+    .main-right__item-title--three {
+        padding-top: 24px;
+        font-size: 24px;
+    }
+
+    .main-right__item-text--caption {
+        font-size: 13px;
+        margin: 0;
+        padding: 13px 0 10px;
+    }
+
+    .form-label {
+        padding: 23px 0 5px;
+    }
+
+    .contact-input--contact {
+        padding: 12px;
+        min-width: 373px;
+    }
+
+    .contact-input--select {
+        min-width: 373px;
+    }
+
+    .contact-input--textarea {
+        min-height: 238px;
+    }
+
+    .form-checkbox__container {
+        margin: 0 0 25px;
+    }
+}
+
+// media querry za mobilne telefone
+
+@media only screen and (max-width: 767px) {
+
+    //about us
+
+    .header--about {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header--about-wrapper {
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .header-logo__image {
+        max-height: 50px;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px;
+    }
+
+    .header-logo__image {
+        max-height: 50px;
+    }
+
+    .header--about-title {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .main {
+         padding-bottom: 0px;
+    }
+
+    .main-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .main-left {
+        order: 2;
+        flex-basis: 100%;
+    }
+
+    .tile-small__upper-text {
+        line-height: 2;
+    }
+
+    .main-left__accordion-container {
+        margin: 20px;
+    }
+
+    .main-left__accordion-item {
+        font-size: 16px;
+    }
+
+    .main-right {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .main-right__item-image {
+        padding: 18px 0;
+        max-width: 100%;
+    }
+
+    .main-left__contact-link {
+        padding: 0;
+    }
+
+    .main-right__item-title {
+        padding: 0 20px;
+    }
+
+    .main-right__item-title--one {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .main-right__item-text {
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 0px;
+    }
+
+    .main-right__item-text--caption {
+        padding: 0;
+    }
+
+    .main-right__item-text--large {
+        padding-top: 10px;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+
+    .main-right__item-title--two {
+        font-size: 22px;
+    }
+    
+    .main-right__item-title--three, 
+    .main-right__item-title--four {
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    
+    //work
+
+    .header--work {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header--work-wrapper {
+        justify-content: space-between;
+    }
+
+    .header--work-title {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .main-work {
+        padding: 0;
+    }
+
+    .main-row--one {
+        flex-wrap: wrap;
+    }
+
+    .main-row__paragh {
+        font-size: 20px;
+    }
+
+    .main-row__item {
+        flex-basis: 100%;
+        min-height: 320px;
+    }
+
+    .main-row--three {
+        padding: 0;
+    }
+
+    .main-row__slider {
+        display: none;
+    }
+
+    //contact
+
+    .header--contact {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header--contact-wrapper {
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .header-logo__image {
+        max-height: 50px;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px;
+    }
+
+    .header-logo__image {
+        max-height: 50px;
+    }
+
+    .main-left__contact-link {
+        padding: 4px 20px 0;
+    }
+
+    .header--contact-title {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .main-right__item-text--contact {
+        padding: 0 20px;
+    }
+
+    .main-right__item-text--caption {
+        padding: 0;
+    }
+
+    .main-right__form {
+        padding-left: 10px;
+    }
+
+    .form-checkbox__container {
+        flex-basis: 90%;
+    }
+
+    .contact-input--contact,
+    .contact-input--select,
+    .contact-input--textarea {
+        min-width: 200px;
+        padding: 13px 0;
+        flex-basis: 90%;
+    }
+
+    .contact-btn {
+        flex-basis: 90%;
+        margin: 5px;
+    }
+
+}

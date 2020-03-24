@@ -1,0 +1,14 @@
+// sass-lint:disable indentation, property-sort-order, quotes, class-name-format
+
+@mixin titles {
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+@mixin logo {
+  display: block;
+  margin: 0 auto;
+  padding: 3.5em 0 1em;
+}

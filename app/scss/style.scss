@@ -1,0 +1,763 @@
+// sass-lint:disable indentation, property-sort-order, quotes, class-name-format
+
+@import 'colors';
+@import 'fonts';
+@import 'mixini';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+//header 
+
+.header {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 800px;
+    background-image: url('../images/hero.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-logo {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nav-list__item {
+    text-transform: uppercase;
+    padding: 2rem 1rem;
+}
+
+.nav-list__item--hidden {
+    display: none;
+}
+
+.nav-list__item--text {
+    padding: 4rem 1rem;
+}
+
+.nav-list__item-span {
+    padding: 4rem 0 1rem 2em;
+}
+
+.nav-list__item--logo {
+    margin: 0 28px;
+}
+
+.nav-list__link {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+        color: $font-color;
+    }
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    height: 30px;
+    margin: 10px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.intro {
+    background-color: $bk-color;
+    min-height: 469px;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.small-logo {
+    @include logo;
+}
+
+.intro-title {
+    @include titles;
+    font-size: 15px;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 8px;
+    color: $font-color;
+}
+
+// tiles 
+
+.tile {
+    min-width: 100%;
+    display: flex;
+    min-height: 600px;
+}
+
+.tile-big {
+    flex-basis: 66.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.tile-big--one {
+    background-image: url('../images/bike-guvernala.png');
+}
+
+.tile-big--two {
+    background-image: url('../images/Img\ 011-bike.png');
+    order: 2;
+}
+
+.tile-big--three {
+    background-image: url('../images/red-bike-frame.png');
+    flex-basis: 33.3%;
+}
+
+.tile-big--three-v2 {
+    background-image: url('../images/bike-on-wall.png');
+    flex-basis: 33.3%;
+}
+
+.tile-small {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-basis: 33.3%;
+}
+
+.tile-small__upper {
+    position: relative;
+    background-image: url('../images/Bg-pointer-down.png');
+    background-position: bottom;
+    z-index: 1;
+    margin-bottom: -5px;
+    text-align: justify;
+}
+
+.tile-small__upper-text {
+    margin: 1em auto;
+    color: $font-color;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    width: 75%;
+}
+
+.small-title {
+    @include titles;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tile-small__upper-line {
+    margin: 0 auto;
+    padding: 1em;
+    display: block;
+}
+
+.tile-small__lower {
+    display: flex;
+    width: 100%;
+    padding-bottom: 12em;
+    background-size: cover;
+    background-position: center;
+}
+
+.tile-small__lower--one {
+    background-image: url('../images/seat.png');
+}
+
+.tile-small__lower--two {
+    background-image: url('../images/seat-black.png');
+}
+
+.tile-small__lower--three {
+    background-image: url('../images/bike-rim.png');
+}
+
+// carousel 
+
+.carousel {
+    min-height: 470px;
+    padding: 1em;
+    background-color: $bk-color;
+    text-align: center;
+}
+
+.carousel-twitter {
+    padding: 1em;
+}
+
+.carousel-title {
+    padding: 8px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.carousel-title-span {
+    font-weight: 300;
+    color: $font-color;
+}
+
+.carousel-paragh {
+    padding: 8px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-style: italic;
+    color: $font-color;
+}
+
+.carousel-swiper {
+    margin-top: 98px;
+}
+
+//shop
+
+.shop {
+    min-width: 100%;
+    min-height: 765px;
+}
+
+.shop-container {
+    display: flex;
+    min-height: 535px;
+}
+
+.shop-block {
+    flex-basis: 34%;
+    min-height: 75%;
+}
+
+.shop-block__upper {
+    display: flex;
+    min-height: 50%;
+}
+
+.block {
+    background-size: cover;
+    background-position: center;
+}
+
+.shop-block__upper-1 {
+    display: flex;
+    flex-basis: 50%;
+    background-image: url('../images/brooks-seat.png');
+}
+
+.shop-block__upper-2 {
+    display: flex;
+    flex-basis: 50%;
+    background-image: url('../images/seats-on-wall.png');
+}
+
+.shop-block__lower--one {
+    min-height: 50%;
+    background-image: url('../images/brooks-seat-big.png');
+}
+
+.shop-block__left {
+    flex-basis: 16%;
+    display: flex;
+    background-image: url('../images/backpack.png');
+}
+
+.shop-block__right {
+    flex-basis: 16%;
+    display: flex;
+    background-image: url('../images/black-bike.png');
+}
+
+.shop-block__upper--three {
+    background-image: url('../images/green-image.png');
+}
+
+.shop-block__lower--three {
+    display: flex;
+    min-height: 50%;
+}
+
+.shop-block__lower-1 {
+    flex-basis: 50%;
+    min-height: 100%;
+    background-image: url('../images/godseye-seat.png');
+}
+
+.shop-block__lower-2 {
+    flex-basis: 50%;
+    min-height: 100%;
+    background-image: url('../images/bag.png');
+}
+
+.shop-discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-color: $bk-discover;
+}
+
+.shop-discover__button {
+    border: 1px solid $white;
+    padding: 1em 3em;
+}
+
+.shop-discover__link {
+    @include titles;
+    color: $white;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+// contact section
+
+.contact {
+    min-height: 470px;
+    padding: 3em;
+    text-align: center;
+}
+
+.contact-logo {
+    padding: 30px;
+}
+
+.contact-paragh {
+    color: $font-color;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.contact-form {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+}
+
+.contact-input {
+    min-width: 200px;
+    padding: 2em 3em;
+    border: 1px solid $light-font;
+
+    &::placeholder {
+        color: $light-font;
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
+.contact-btn {
+    border-style: none;
+    background-color: $btn-color;
+    font-size: 24px;
+    margin: 0 8px;
+    padding: 1em 1.8em;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+//footer 
+
+.footer {
+    background-color: $bk-color;
+}
+
+.wrapper--footer {
+    display: flex;
+}
+
+.footer__item {
+    flex-basis: 33.3%;
+    color: $font-color;
+}
+
+.footer__item--address {
+    text-align: left;
+}
+
+.address-text--domain {
+    text-decoration: none;
+    color: $font-color;
+}
+
+.social-icon {
+    margin: 0 8px;
+}
+
+.footer__item--creator {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__creator-text {
+    font-style: italic;
+    margin: 1em;
+}
+
+// media za tablet
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .header {
+        min-height: 620px;
+    }
+
+    .wrapper {
+        padding: 4rem 0;
+    }
+
+    .intro-title, .intro-text {
+        font-size: 18px;
+        padding: 8px 26px;
+    }
+
+    .tiles {
+        padding-top: 68px;
+    }
+
+    .tile-big, .tile-small {
+        flex-basis: 50%;
+    }
+
+    .small-logo {
+        padding: 3.8em 0 17px;
+    }
+
+    .tile-small__upper-text {
+        margin: 0 auto;
+        line-height: 1.9;
+        min-width: 85%;
+        letter-spacing: 0;
+    }
+
+    .tile-small__upper-line {
+        margin: 7px auto 30px;
+    }
+
+    .tile-big--three-v2 {
+        display: none;
+    }
+
+    .wrapper--carousel {
+        margin: 27px auto 0;
+    }
+
+    .carousel-title {
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .carousel-paragh {
+        padding: 2px 13px;
+        font-size: 24px;
+    }
+
+    .carousel-swiper {
+        margin-top: 57px;
+    }
+
+    .shop-container {
+        flex-wrap: wrap;
+    }
+
+    .shop-block {
+        flex-basis: 66.6%;
+        min-height: 511px;
+    }
+
+    .shop-block__left,
+    .shop-block__right {
+        display: flex;
+        flex-basis: 33.3%;
+        min-height: 511px;
+    }
+
+    .contact {
+        padding: 5em 5em 0;
+        min-height: 365px;
+    }
+    
+    .wrapper--footer {
+        flex-wrap: wrap;
+        padding: 4rem 30px;
+    }
+
+    .footer__item--address {
+        order: 2;
+        flex-basis: 50%;
+    }
+
+    .footer__item--social {
+        order: 1;
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer__item--creator {
+        order: 3;
+        flex-basis: 50%;
+    }
+}
+
+//media query za mobilne telefone
+
+@media only screen and (max-width: 767px) {
+    .header {
+        min-height: 260px;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .header-logo__image {
+        max-height: 50px;
+    }
+
+    .nav {
+        padding: 20px 0;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 90%;
+    }
+
+    .nav-list__item {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-list__item--hidden {
+        display: block;
+        position: relative;
+    }
+
+    .nav-list__item--hidden-image1 {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 14px;
+        right: 1px;
+    }
+
+    .nav-list__item--hidden-image2 {
+        padding: 10px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: -5px;
+        right: 1px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .nav-list__item-span {
+        display: none;
+    }
+
+    .nav-list__item--logo {
+        display: none;
+    }
+
+    .nav {
+        padding: 1em;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $white;
+        transition: 0.5s ease-out;
+        transform: translateY(100%);
+        flex-wrap: wrap;
+        z-index: 99;
+
+        &.visible {
+            transform: translateY(0);
+        }
+    }
+
+    .nav-list__item {
+        flex: 1 1 100%;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .small-logo {
+        padding-top: 31px;
+    }
+
+    .intro {
+        min-height: 300px;
+    }
+
+    .intro-title {
+        padding: 0;
+        font-size: 19px;
+    }
+
+    .small-title {
+        padding: 10px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+        line-height: 1.65;
+        padding: 18px;
+    }
+
+    .tile-small__upper {
+        margin-bottom: 0;
+    }
+    
+    .tile-small__upper-text {
+        text-align: center;
+        margin: 10px auto;
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .tile-small__upper-line {
+       padding: 0 0 30px;
+    }
+
+    .tile {
+        display: block;
+        min-height: 400px;
+    }
+
+    .tile-big {
+        min-height: 230px;
+    }
+
+    .tile-small__lower {
+        display: none;
+    }
+
+    .tile-big--three-v2 {
+        display: none;
+    }
+
+    .carousel {
+        min-height: 388px;
+    }
+
+    .carousel-twitter {
+        padding-top: 45px;
+    }
+
+    .carousel-title {
+        padding-top: 16px;
+        font-size: 19px;
+        letter-spacing: 2px;
+    }
+
+    .carousel-swiper {
+        margin-top: 32px;
+    }
+
+    .shop {
+        min-height: auto;
+    }
+
+    .shop-container {
+        flex-wrap: wrap;
+        min-height: 325px;
+    }
+
+    .shop-block__left,
+    .shop-block__right,
+    .shop-block__lower--three,
+    .shop-block__upper--one {
+        display: none;
+    }
+
+    .shop-block {
+        flex-basis: 100%;
+    }
+
+    .shop-block__lower--one,
+    .shop-block__upper--three {
+        min-height: 100%;
+    }
+
+    .shop-discover {
+        min-height: 112px;
+    }
+
+    .contact {
+        padding: 0;
+        min-height: 415px;
+
+    }
+
+    .contact-form {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .contact-input, 
+    .contact-btn {
+        flex-basis: 100%;
+        margin: 5px;
+    }
+
+    .wrapper--footer {
+        flex-wrap: wrap;
+    }
+
+    .footer__item {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer__item--address {
+        order: 2;
+    }
+
+    .footer__item--social {
+        order: 1;
+    }
+
+    .footer__item--creator {
+        order: 3;
+        justify-content: center;
+    }
+}

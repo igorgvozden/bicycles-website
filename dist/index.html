@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gulp 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html"><img class="header-logo__image" src="images/Logo.png" alt="company logo"></a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-list__item nav-list__item--hidden">
+                    <img class="nav-list__item--hidden-image1" src="images/about/Rectangle11.png">
+                    <img class="nav-list__item--hidden-image2" src="images/about/Rectangle1copy.png" onclick="toggleMenu()"> 
+                </li>
+                <li class="nav-list__item nav-list__item--text"><a class="nav-list__link" href="about.html">about us</a><span class="nav-list__item-span">.</span></li>
+                <li class="nav-list__item nav-list__item--text"><a class="nav-list__link" href="work.html">work</a></li>
+                <li class="nav-list__item nav-list__item--logo"><a class="nav-list__link" href="#"><img src="images/Logo.png" alt="company logo"></a></li>
+                <li class="nav-list__item nav-list__item--text"><a class="nav-list__link" href="javascript:;">shop</a><span class="nav-list__item-span">.</span></li>
+                <li class="nav-list__item nav-list__item--text"><a class="nav-list__link" href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" type="button" style="background-image: url('images/hamburger.png');" onclick="toggleMenu()"></button>
+    </header>
+    <div class="intro">
+        <div class="wrapper">
+            <img class="intro-logo small-logo" src="images/icon-links.png" alt="links icon">
+            <h3 class="intro-title">a new generation of vintage bike</h3>
+            <p class="intro-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industy's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+    </div>
+    <div class="tiles">
+        <div class="tile">
+            <div class="tile-big tile-big--one">
+                <img src="images/Logo-bike.png" alt="logo bike">
+            </div>
+            <div class="tile-small">
+                <div class="tile-small__upper tile-small__upper--one">
+                    <img class="tile-small__upper-logo small-logo " src="images/icon-bike-frame.png" alt="bike frame logo">
+                    <h4 class="tile-small__upper-title small-title">vintage oliva</h4>
+                    <p class="tile-small__upper-text">Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500's, when an unknown printer took a gallery of type and scrambled it to make a specimen book. It has survived.</p>
+                    <img class="tile-small__upper-line" src="images/line.png" alt="line">
+                </div>
+                <div class="tile-small__lower tile-small__lower--one"></div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-big tile-big--two">
+                <img src="images/vintage-logo.png" alt="logo vintage bike">
+            </div>
+            <div class="tile-small">
+                <div class="tile-small__upper tile-small__upper--two">
+                    <img class="tile-small__upper-logo small-logo " src="images/icon-wheel.png" alt="bike wheel logo">
+                    <h4 class="tile-small__upper-title small-title">la boriosa</h4>
+                    <p class="tile-small__upper-text">Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500's, when an unknown printer took a gallery of type and scrambled it to make a specimen book. It has survived.</p>
+                    <img class="tile-small__upper-line" src="images/line.png" alt="line">
+                </div>
+                <div class="tile-small__lower tile-small__lower--two"></div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile-big tile-big--three">
+                <img src="images/Logo-bicycles-text.png" alt="logo vintage bike">
+            </div>
+            <div class="tile-small">
+                <div class="tile-small__upper tile-small__upper--three">
+                    <img class="tile-small__upper-logo small-logo " src="images/icon-fork.png" alt="bike wheel logo">
+                    <h4 class="tile-small__upper-title small-title">retro bike - m. hulot</h4>
+                    <p class="tile-small__upper-text">Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500's, when an unknown printer took a gallery of type and scrambled it to make a specimen book. It has survived.</p>
+                    <img class="tile-small__upper-line" src="images/line.png" alt="line">
+                </div>
+                <div class="tile-small__lower tile-small__lower--three"></div>
+            </div>
+            <div class="tile-big tile-big--three-v2"></div>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="wrapper wrapper--carousel">
+            <img class="carousel-twitter" src="images/twitter.png" alt="twitter">
+            <h4 class="carousel-title">AOD New York @aod<span class="carousel-title-span"> / 35 min</span></h4>
+            <p class="carousel-paragh">Lorem ipsum dolor sit arnet, consectetur adipiscing elit. Sed ut tellus ac nulla
+                semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+            <img class="carousel-swiper" src="images/Ellipse1.png" alt="swiper">
+        </div> 
+    </div>
+    <div class="shop">
+        <div class="shop-container">
+            <div class="shop-block  shop-block--two--one">
+                <div class="shop-block__upper shop-block__upper--one">
+                    <div class="shop-block__upper-1 block"></div>
+                    <div class="shop-block__upper-2 block"></div>
+                </div>
+                <div class="shop-block__lower shop-block__lower--one block"></div>
+            </div>
+                <div class="shop-block__left block"></div>
+                <div class="shop-block__right block"></div>
+            <div class="shop-block shop-block--three">
+                <a href="javascript:;">
+                    <div class="shop-block__upper shop-block__upper--three block"></div>
+                </a>
+                <div class="shop-block__lower shop-block__lower--three">
+                    <div class="shop-block__lower-1 block"></div>
+                    <div class="shop-block__lower-2 block"></div>
+                </div>
+            </div>
+            </div>
+        <div class="shop-discover">
+            <a href="javasccript:;" class="shop-discover__link"><p class="shop-discover__button">discover the shop</p></a>
+        </div>
+    </div>
+    <div class="contact">
+        <img class="contact-logo" src="images/Logo.png" alt="logo">
+        <p class="contact-paragh">Stay on the saddle!</p>
+        <form class="contact-form" action="#" method="POST">
+            <input class="contact-input" type="email" name="email" placeholder="enter your email...">
+            <button class="contact-btn" type="submit">go</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="wrapper wrapper--footer">
+            <div class="footer__item footer__item--address">
+                <h4 class="address-title">AOD New York</h4>
+                <p class="address-text">2250 Lexington Avenue</p>
+                <p class="address-text">New York, NY 10035 - <a class="address-text--domain" href="javascript:;">info@domain.com</a></p>
+            </div>
+            <div class="footer__item footer__item--social">
+                <a href="javascript:;"><img class="social-icon" src="images/twitter-icon.png" alt="tweeter"></a>
+                <a href="javascript:;"><img class="social-icon" src="images/facebook-icon.png" alt="facebook"></a>
+                <a href="javascript:;"><img class="social-icon" src="images/pinterest-icon.png" alt="pinterest"></a>
+            </div>
+            <div class="footer__item footer__item--creator">
+                <p class="footer__creator-text">Handcraftet by</p><span class="footer__creator-link"><a href="javascript:;"><img src="images/YEBOLogo.png" alt="yebo logo"></span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
